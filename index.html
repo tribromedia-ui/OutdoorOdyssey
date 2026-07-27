@@ -20,15 +20,21 @@
             text-align: center;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        nav {
+            background: #16304a;
+            padding: 0.8rem;
+            text-align: center;
         }
 
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.2rem;
-            opacity: 0.9;
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         main {
@@ -45,7 +51,6 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        /* Gallery Styles */
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -56,33 +61,6 @@
             width: 280px;
             border-radius: 8px;
             object-fit: cover;
-        }
-
-        /* Video Styles */
-        .video iframe {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        .video-file {
-            margin-top: 20px;
-            max-width: 100%;
-            border-radius: 8px;
-        }
-
-        /* Button */
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #2a6f2a;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .button:hover {
-            background-color: #245c24;
         }
 
         footer {
@@ -102,16 +80,19 @@
     <p>Adventure • Exploration • Storytelling</p>
 </header>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="youtube.html">YouTube</a>
+</nav>
+
 <main>
 
-    <!-- Welcome Section -->
     <div class="section">
         <h2>Welcome</h2>
         <p>Outdoor Odyssey is all about exploring the outdoors, capturing adventures, and sharing stories through video. Follow along as we hike, kayak, test gear, and discover new places.</p>
         <p>We document real adventures — from building custom gear to exploring Missouri trails and waterways.</p>
     </div>
 
-    <!-- Photo Gallery -->
     <div class="section">
         <h2>Photo Gallery</h2>
         <div class="gallery">
@@ -121,18 +102,6 @@
         </div>
     </div>
 
-    <!-- Video Section -->
-    <div class="section">
-        <h2>Videos</h2>
-
-    <!-- YouTube Channel Section -->
-    <div class="section">
-        <h2>YouTube Channel</h2>
-        <p>Check out the latest adventures, gear tests, and outdoor projects on the Outdoor Odyssey YouTube channel.</p>
-        <a href="https://www.youtube.com/@OutdoorOdyssey1383" class="button">Visit Channel</a>
-    </div>
-
-    <!-- Projects Section -->
     <div class="section">
         <h2>Projects</h2>
         <ul>
@@ -140,7 +109,6 @@
             <li>Odyssey One</li>
             <li>Kayaking</li>
             <li>Gear reviews</li>
-            <li>Charlie</li>
             <li>Hiking</li>
         </ul>
     </div>

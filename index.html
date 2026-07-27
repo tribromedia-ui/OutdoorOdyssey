@@ -6,28 +6,35 @@
     <title>Outdoor Odyssey</title>
 
     <style>
+        :root {
+            --brand-blue: #400CE0;
+            --brand-orange: #FB8729;
+            --brand-white: #F6F4F2;
+            --text-dark: #1a1a1a;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #222;
+            background: var(--brand-white);
+            color: var(--text-dark);
         }
 
         header {
-            background: #1e3a5f;
-            color: white;
+            background: var(--brand-blue);
+            color: var(--brand-white);
             padding: 2rem;
             text-align: center;
         }
 
         nav {
-            background: #16304a;
+            background: var(--brand-orange);
             padding: 0.8rem;
             text-align: center;
         }
 
         nav a {
-            color: white;
+            color: var(--brand-white);
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
@@ -44,11 +51,16 @@
         }
 
         .section {
-            background: white;
+            background: var(--brand-white);
             padding: 1.5rem;
             margin-bottom: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 6px solid var(--brand-blue);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: var(--brand-blue);
         }
 
         .gallery {
@@ -61,13 +73,14 @@
             width: 280px;
             border-radius: 8px;
             object-fit: cover;
+            border: 3px solid var(--brand-orange);
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background: #1e3a5f;
-            color: white;
+            background: var(--brand-blue);
+            color: var(--brand-white);
             margin-top: 2rem;
         }
     </style>
@@ -121,3 +134,4 @@
 
 </body>
 </html>
+

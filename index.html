@@ -1,21 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Odyssey</title>
+    <title>YouTube • Outdoor Odyssey</title>
 
     <style>
         :root {
             --brand-blue: #400CE0;
             --brand-orange: #FB8729;
             --brand-white: #F6F4F2;
+            --brand-black: #090000;
             --text-dark: #1a1a1a;
         }
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: busch script MT, Arial, sans-serif;
             background: var(--brand-white);
             color: var(--text-dark);
         }
@@ -55,31 +57,25 @@
             padding: 1.5rem;
             margin-bottom: 1.5rem;
             border-radius: 8px;
-            border-left: 6px solid var(--brand-blue);
+            border-left: 6px solid var(--brand-orange);
             box-shadow: 0 2px 5px rgba(0,0,0,0.08);
         }
 
         .section h2 {
-            color: var(--brand-blue);
+            color: var(--brand-orange);
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .gallery img {
-            width: 280px;
+        .video iframe {
+            max-width: 100%;
             border-radius: 8px;
-            object-fit: cover;
-            border: 3px solid var(--brand-orange);
+            border: 3px solid var(--brand-blue);
+            margin-bottom: 20px;
         }
 
         footer {
             text-align: center;
             padding: 1rem;
-            background: var(--brand-blue);
+            background: var(--brand-orange);
             color: var(--brand-white);
             margin-top: 2rem;
         }
@@ -90,48 +86,51 @@
 
 <header>
     <h1>Outdoor Odyssey</h1>
-    <p>Adventure • Exploration • Storytelling</p>
+    <p>YouTube Channel</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="youtube.html">YouTube</a>
+    <a href="shop.html">Shop</a>
 </nav>
 
 <main>
 
     <div class="section">
-        <h2>Welcome</h2>
-        <p>Outdoor Odyssey is all about exploring the outdoors, capturing adventures, and sharing stories through video. Follow along as we hike, kayak, test gear, and discover new places.</p>
-        <p>We document real adventures — from building custom gear to exploring Missouri trails and waterways.</p>
-    </div>
+        <h2>Latest Videos</h2>
 
-    <div class="section">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="/assets/images/Josh.png" alt="Josh Kreger">
-            <img src="/assets/images/Luke.jpg" alt="Luke Kreger">
-            <img src="/assets/images/Zach.jpg" alt="Zach Kreger">
+        <div class="video">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/eYb_xyKPQD8?si=14MmQsIoxjTpVe7G"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
         </div>
-    </div>
+        
+        <div class="video">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/SblvsdBJosk"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Charlie</li>
-            <li>Odyssey One</li>
-            <li>Kayaking</li>
-            <li>Gear reviews</li>
-            <li>Hiking</li>
-        </ul>
+        <p>
+            Visit the full channel for more adventures:
+            <a href="https://www.youtube.com/@OutdoorOdyssey1383" target="_blank">
+                Outdoor Odyssey YouTube Channel
+            </a>
+        </p>
     </div>
 
 </main>
 
 <footer>
-    © 2026 Outdoor Odyssey LLC
+    © 2026 Outdoor Odyssey
 </footer>
 
 </body>
 </html>
-
